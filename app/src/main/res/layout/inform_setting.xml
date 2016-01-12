@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xmlTopTitleHeight"
+        android:background="#1f9d85">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="@dimen/xmlTopLeftIconWidth"
+            android:layout_height="@dimen/xmlTopLeftIconHeight"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/xmlTopLeftIconMargin"
+            android:background="@null"
+            android:onClick="login"
+            android:scaleType="centerInside"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xmlTopTitleHeight"
+            android:gravity="center"
+            android:text="通知设置"
+            android:textColor="@color/xmlWhiteLineColor"
+            android:textSize="@dimen/xmlTopTitleTextSize" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:background="#ebebeb">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/pic"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/input1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/accountSetting"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="小熊文摘"
+                        android:textColor="#444444"
+                        android:textSize="17sp" />
+
+                    <ToggleButton
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/switchbutton_selector"
+                        android:layout_centerVertical="true"
+                        android:textOn=""
+                        android:textOff=""
+                        android:layout_marginRight="20dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#dbdbdb" />
+
+                <RelativeLayout
+                    android:id="@+id/learnNumSetting"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="打卡通知"
+                        android:textColor="#444444"
+                        android:textSize="15sp" />
+
+                    <ToggleButton
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/switchbutton_selector"
+                        android:layout_centerVertical="true"
+                        android:textOn=""
+                        android:textOff=""
+                        android:layout_marginRight="20dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#dbdbdb" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

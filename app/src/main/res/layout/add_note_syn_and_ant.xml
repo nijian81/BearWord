@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:background="#cbcbcb">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="360度无死角学习。有余力时就作为辅助练习。不想学就完全可以忽略。方向对了，努力才有成效。" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:id="@+id/note"
+            android:layout_toLeftOf="@+id/add"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/corners_bg_sousuo_2">
+
+            <EditText
+                android:id="@+id/addNote"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:hint="请输入有助记忆的笔记"
+                android:inputType="text"
+                android:selectAllOnFocus="true"
+                android:textCursorDrawable="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/add"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/corners_bg_sousuo">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="添加"
+                android:textColor="#444444"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

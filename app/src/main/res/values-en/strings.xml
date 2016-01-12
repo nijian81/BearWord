@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" >Can do bear</string>
+    <string name="four_step">FourStep</string>
+    <string name="find">Find</string>
+    <string name="card_days">CardDays</string>
+    <string name="accumulate_learn_word_days">/AccumulateLearnWordDays</string>
+    <string name="master_word_num">/MasterWordNum</string>
+    <string name="today_learn_plan">TodayLearnPlan</string>
+    <string name="root">Root</string>
+    <string name="prefix">Prefix</string>
+    <string name="suffix">Suffix</string>
+    <string name="word">Word</string>
+    <string name="learn">Learn</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="setting">setting</string>
+</resources>
